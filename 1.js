@@ -29,5 +29,7 @@
     }
     var limit = 100
     var sum = sumOfMultiplesOf3Or5(limit);
+    console.time("timeTaken");
     console.log(`values up to ${limit} is: ${sum}`);
+    console.timeEnd("timeTaken");
 }());

@@ -13,6 +13,7 @@
 
 "use strict";
 
+
 function fibonacci(sequenceNumber) {
     if (sequenceNumber < 2) {
         return 1;
@@ -34,11 +35,11 @@ function sumOfEvenFibonacciNumbers(limit) {
         } else {
             if (currentFoundFibonacciTerm % 2 == 0) {
                 sumOfEvenFibs += currentFoundFibonacciTerm;
-               // console.log(`Even Fibonacci ${currentFoundFibonacciTerm} being added to total`);
-                //console.log(`Total is now: ${sumOfEvenFibs}`);
             }
             counter++;
         }
     }
 }
+console.time("timeTaken");
 console.log(`The Answer is: ${sumOfEvenFibonacciNumbers(4000000)}`);
+console.timeEnd("timeTaken");
